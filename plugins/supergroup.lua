@@ -1444,7 +1444,7 @@ local function run(msg, matches)
 		if not data[tostring(msg.to.id)] then
 			return
 		end
-		if matches[1] == "info"or matches[1] == "معلومات" then
+		if matches[1] == "ginfo"or matches[1] == "معلومات" then
 			if not is_owner(msg) then
 				return
 			end
@@ -2381,7 +2381,7 @@ return {
 	"^[#!/]([Rr]em)$",
 	"^(تعطيل)$",
 	"^[#!/]([Mm]ove) (.*)$",
-	"^[#!/]([Ii]nfo)$",
+	"^[#!/]([Gg]info)$",
 	"^(معلومات)$",
 	"^[#!/]([Aa]dmins)$",
 	"^[#!/]([Oo]wner)$",
